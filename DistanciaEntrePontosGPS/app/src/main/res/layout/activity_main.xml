@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:backgroundTint="#ffffff"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF0000"
+            android:onClick="reset"
+            android:text="Reset"/>
+
+        <TextView
+            android:id="@+id/txtPontoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ponto A"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#ffa500"
+                android:onClick="verPontoA"
+                android:text="Ver"
+                android:textAlignment="center"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="lerPontoA"
+                android:text="Ler"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtPtoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName|textMultiLine"
+            android:maxLines="5"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:id="@+id/txtPontoB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ponto B"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#ffa500"
+                android:onClick="verPontoB"
+                android:text="Ver"
+                android:textAlignment="center"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="lerPontoB"
+                android:text="Ler"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtPtoB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName|textMultiLine"
+            android:maxLines="5"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
+            android:onClick="calcularDistancia"
+            android:text="Distância"/>
+
+        <WebView
+            android:id="@+id/webv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txtView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text View" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
